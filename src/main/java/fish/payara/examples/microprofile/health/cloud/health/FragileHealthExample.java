@@ -29,6 +29,6 @@ public class FragileHealthExample implements HealthCheck {
     
     private boolean up() {
         int up = new Random().nextInt(10);
-        return up < 8 ? true : false;
+        return up < 6 ? true : false;
     }
 }
